@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-  belongs_to :author, class_name: 'User', counter_cache: :post_counter
+  belongs_to :author, class_name: 'User'
   has_many :like
   has_many :comment
   validates :title, presence: true, length: { maximum: 250 }

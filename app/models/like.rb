@@ -1,6 +1,6 @@
 class Like < ApplicationRecord
   belongs_to :author, class_name: 'User'
-  belongs_to :post, counter_cache: :like_counter
+  belongs_to :post
 
   after_save :increment_like_count
 

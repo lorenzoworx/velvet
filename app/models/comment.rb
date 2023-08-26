@@ -1,6 +1,6 @@
 class Comment < ApplicationRecord
   belongs_to :author, class_name: 'User'
-  belongs_to :post, counter_cache: :comment_counter
+  belongs_to :post
 
   after_save :increment_comment_count
 
