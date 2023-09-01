@@ -1,1 +1,8 @@
-<h1>User post details</h1>
+<section class='post-card-on-click'>
+  <div class='post-card-title'>
+    <h1><%=@post.title%> by <%=@post.author.name%></h1>
+    <div class='post-card-count-top'>Comments: <%=@post.comment_counter%>, Likes: <%=@post.like_counter%></div>
+  </div>
+  <div><%=@post.text%></div>  
+</section>
+<%= render 'shared/comment', comments: @post.recent_5_comments%>
