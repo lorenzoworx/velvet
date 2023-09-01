@@ -1,1 +1,18 @@
-<h1>User details</h1>
+<%= render 'shared/user', user: @user %>
+<div class='users-bio'><%= @user.bio %></div>
+<ul class='users-post-cards-ul'>
+  <% if @user.recent_3_posts.empty? %>
+    <p class='no-posts-card'>No posts</p>
+  <% else %>
+    <% @user.recent_3_posts.each do |post| %>
+      <li><%= render 'shared/post', post: post %></li>
+    <% end %>
+  <% end %>
+</ul>
+<div class='show-all-post-button-container'><%= link_to "See all posts", user_posts_path(@user), class: 'show-all-post-btn' %></div>
+
+
+
+
+
+
