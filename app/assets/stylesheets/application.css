@@ -56,6 +56,7 @@ main {
 
 .users-post-cards-ul {
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .show-all-post-btn {
@@ -85,10 +86,6 @@ main {
 
 .back-btn {
   margin-bottom: 30px;
-}
-
-.users-post-cards-ul {
-  width: 100%;
 }
 
 .users-post-cards-ul > li {
