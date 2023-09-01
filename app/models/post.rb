@@ -10,6 +10,10 @@ class Post < ApplicationRecord
     comment.order(created_at: :desc).limit(5)
   end
 
+  def all_comments
+    comment.order(created_at: :desc)
+  end
+
   after_save :increment_post_count
 
   private

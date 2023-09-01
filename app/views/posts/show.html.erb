@@ -5,4 +5,4 @@
   </div>
   <div><%=@post.text%></div>  
 </section>
-<%= render 'shared/comment', comments: @post.recent_5_comments%>
+<%= render 'shared/comment', comments: @post.all_comments%>

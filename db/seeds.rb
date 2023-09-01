@@ -29,7 +29,7 @@ for user_position in 0..quantity_users - 1 do
 
     for comment_position in 0..Random.rand(quantity_comments) do
       position = Random.rand(quantity_users)
-      Comment.create!(post: temp_post, author: users[Random.rand(quantity_users)], text: Faker::Lorem.sentences(number: 12 + Random.rand(20)).join(' '))
+      Comment.create!(post: temp_post, author: users[Random.rand(quantity_users)], text: Faker::Lorem.sentences(number: 3 + Random.rand(15)).join(' '))
     end
 
     for like in 1..Random.rand(quantity_likes) do
