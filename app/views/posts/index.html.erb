@@ -1,1 +1,14 @@
-<h1>Here is a list of posts made by the same user</h1>
+<%= render 'shared/user', user: @user%>
+<ul>
+  <% if @posts.empty?%>
+    <p class='post-card-no-click'>No posts</p>
+  <% else%>
+  <div class='users-bio'><%=@user.bio%></div>
+  <% @posts.each do |post|%>
+    <li>
+      <%= render 'shared/post', post: post%>
+    </li>
+  <%end%>
+<%end%>
+</ul>
+<%= link_to 'Back', :back, class: 'back-btn btn-secondary' %>
