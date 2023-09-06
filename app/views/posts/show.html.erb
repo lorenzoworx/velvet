@@ -1,8 +1,10 @@
 <section class='post-card-on-click'>
   <div class='post-card-title'>
-    <h1><%=@post.title%> by <%=@post.author.name%></h1>
+    <h1><%= @post.title %> by <%=@post.author.name%></h1>
     <div class='post-card-count-top'>Comments: <%=@post.comment_counter%>, Likes: <%=@post.like_counter%></div>
   </div>
-  <div><%=@post.text%></div>  
+  <div class='post-text'><%=@post.text%></div>
+  <%= button_to "Like", post_likes_path(@post), method: :post, class: 'like-btn' %>
 </section>
-<%= render 'shared/comment', comments: @post.all_comments%>
+<%= render 'shared/comment', comments: @post.all_comments %>
+<%= render 'shared/comment_form', post: @post, comment: @comment %>
