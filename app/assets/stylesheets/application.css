@@ -137,3 +137,40 @@ main {
 .comment-author {
   font-weight: bold;
 }
+
+.user-intro {
+  margin-bottom: 20px;
+}
+
+.new-post-link-div {
+  margin-bottom: 20px;
+}
+
+.new-post-btn {
+  text-decoration: none;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 500px;
+}
+
+.post-text {
+  margin-bottom: 20px;
+}
+
+.like-btn {
+  width: 50px;
+  border-radius: 300px;
+}
+
+.new-comment-form {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 15px;
+  align-items: center;
+}
+
+.new-post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
