@@ -1,5 +1,7 @@
+<h1 class='user-intro'>Welcome <%= @current_user.name %> </h1>
+<div class='new-post-link-div'> <%= link_to "Create Post", new_post_path, class: 'new-post-btn' %> </div>
 <ul class='user-list'>
-  <% @users.each do |user|%>
-    <li><%= render 'shared/user', user: user%> </li>
-  <%end%>
+  <% @users.each do |user| %>
+    <li><%= render 'shared/user', user: user %> </li>
+  <% end %>
 </ul>
