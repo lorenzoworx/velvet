@@ -131,9 +131,8 @@ You can deploy this project using: **Not available**.
 - Twitter: [@CEOAbel1](https://twitter.com/CEOAbel1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/abel-morara)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
