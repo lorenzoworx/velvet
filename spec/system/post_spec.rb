@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe "Post", type: :system do
-  describe "Post index page" do
+RSpec.describe 'Post', type: :system do
+  describe 'Post index page' do
     before do
       @user = User.create(name: 'Jane', bio: 'Full-stack developer', photo: 'https://placehold.co/100x100')
       @first_post = Post.create(author_id: @user.id, title: 'First post', text: 'First post')
@@ -18,7 +18,7 @@ RSpec.describe "Post", type: :system do
       expect(page).to have_content(@user.name)
     end
 
-    it "Can see the number of posts the user has written" do
+    it 'Can see the number of posts the user has written' do
       expect(page).to have_content('Number of posts: 1')
     end
 
@@ -30,19 +30,19 @@ RSpec.describe "Post", type: :system do
       expect(page).to have_content(@first_post.text)
     end
 
-    it "Can see the first few comments on a post" do
+    it 'Can see the first few comments on a post' do
       expect(page).to have_content("#{@user.name}: #{@comment.text}")
     end
 
-    it "Can see how many comments a post has" do
-      expect(page).to have_content("Comments: 1")
+    it 'Can see how many comments a post has' do
+      expect(page).to have_content('Comments: 1')
     end
 
-    it "Can see how many likes a post has" do
-      expect(page).to have_content("Likes: 1")
+    it 'Can see how many likes a post has' do
+      expect(page).to have_content('Likes: 1')
     end
 
-    it "Redirects to a posts show page when a post is clicked" do
+    it 'Redirects to a posts show page when a post is clicked' do
       click_link 'First post'
       expect(page).to have_current_path(user_post_path(@user, @first_post))
     end

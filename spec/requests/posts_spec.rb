@@ -15,7 +15,6 @@ RSpec.describe 'Posts', type: :request do
       get user_posts_path(@test_user)
       expect(response).to render_template(:index)
     end
-
   end
 
   describe 'GET show' do
