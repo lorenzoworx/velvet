@@ -46,5 +46,9 @@ RSpec.describe 'Post', type: :system do
       click_link 'First post'
       expect(page).to have_current_path(user_post_path(@user, @first_post))
     end
+
+    it 'Can see a section for pagination' do
+      expect(page).to have_content('Pagination')
+    end
   end
 end
