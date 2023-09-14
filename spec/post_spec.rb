@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe Post, type: :model do
-  let(:sample_user) { User.create(name: 'John', photo: 'https://unsplash.com/photos', bio: 'Fullstack developer.') }
+  let(:sample_user) { User.create(name: 'John', photo: 'https://placehold.co/100x100', bio: 'Fullstack developer.') }
   let(:sample_post) { Post.create(author: sample_user, title: 'Hello World', text: 'This is my first post') }
 
   before { sample_post.save }
@@ -16,7 +16,7 @@ describe Post, type: :model do
   end
 
   it 'should have a post count of 1' do
-    author1 = User.create(name: 'Doe', photo: 'https://unsplash.com/photos', bio: 'Fullstack developer.')
+    author1 = User.create(name: 'Doe', photo: 'https://placehold.co/100x100', bio: 'Fullstack developer.')
     expect(author1.post_counter).to eq(0)
     Post.create(author: author1, title: 'Hello World', text: 'This is my first post')
     expect(author1.post_counter).to eq(1)

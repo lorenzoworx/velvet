@@ -119,14 +119,20 @@ You can deploy this project using: **Not available**.
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Okolo Oshoke**
+### 👤 **Okolo Oshoke**
 
 - GitHub: [@lorenzoworx](https://github.com/lorenzoworx)
 - Twitter: [@lorenzoworx](https://twitter.com/lorenzoworx)
 - LinkedIn: [Oshoke Okolo](https://www.linkedin.com/in/oshokeokolo/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### 👤 **Abel Morara**
 
+- GitHub: [@ProgramKingAbel](https://github.com/ProgramKingAbel)
+- Twitter: [@CEOAbel1](https://twitter.com/CEOAbel1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abel-morara)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 

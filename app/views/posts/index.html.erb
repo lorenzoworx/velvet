@@ -1,9 +1,9 @@
 <%= render 'shared/user', user: @user%>
 <ul class='all-posts'>
-  <% if @posts.empty?%>
+  <% if @user.post.empty?%>
     <p class='post-card-no-click'>No posts</p>
   <% else%>
-  <% @posts.each do |post|%>
+  <% @user.post.each do |post|%>
     <li>
       <div class='posts-card-div'><%= render 'shared/post', post: post%></div>
       <div class='posts-comments'>
@@ -19,4 +19,5 @@
   <%end%>
 <%end%>
 </ul>
+<div class='see-all-post-btn-container'><a class='see-all-post-btn'>Pagination</a></div>
 <%= link_to 'Back', :back, class: 'back-btn btn-secondary' %>

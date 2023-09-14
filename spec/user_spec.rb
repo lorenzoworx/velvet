@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe User, type: :model do
-  let(:subject) { User.create(name: 'John', photo: 'https://unsplash.com/photos', bio: 'Fullstack developer.') }
+  let(:subject) { User.create(name: 'John', photo: 'https://placehold.co/100x100', bio: 'Fullstack developer.') }
   before { subject.save }
   it 'should have name present' do
     subject.name = nil
@@ -19,7 +19,7 @@ describe User, type: :model do
   end
 
   it "should return the user's 3 most recent posts" do
-    sample_user = User.create(name: 'John', photo: 'https://unsplash.com/photos', bio: 'Fullstack developer.')
+    sample_user = User.create(name: 'John', photo: 'https://placehold.co/100x100', bio: 'Fullstack developer.')
     Post.create(author: sample_user, title: 'Hello', text: 'This is my first post')
     Post.create(author: sample_user, title: 'Hello', text: 'This is my second post')
     Post.create(author: sample_user, title: 'Hello', text: 'This is my third post')
