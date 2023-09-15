@@ -1,6 +1,6 @@
 <header>
   <h1> <%=current_user.name%> </h1>
-  <div>
+  <div class='profile-actions'>
     <%= button_to "Edit User Profile", edit_user_path(current_user), method: :get, class: 'edit-btn' %>
     <%= button_to "Logout", destroy_user_session_path, method: :delete, class: 'delete-btn' %>
   </div>
