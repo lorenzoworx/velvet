@@ -193,7 +193,15 @@ main {
 
 .field > #user_email,
 #user_password,
-#user_name {
+#user_name,
+#user_password_confirmation {
   width: 60vw;
   height: 30px;
+}
+
+.actions {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
 }
