@@ -5,6 +5,8 @@ ruby '3.2.2'
 
 gem 'rubocop', '>= 1.0', '<2.0'
 
+gem 'devise'
+
 group :development, :test do
   gem 'rspec-rails', '~> 5.0'
 
