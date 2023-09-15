@@ -6,6 +6,17 @@
 body {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  gap: 15px;
+  padding-right: 30px;
+  align-items: center;
 }
 
 main {
@@ -173,4 +184,28 @@ main {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.profile-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.field > #user_email,
+#user_password,
+#user_name,
+#user_password_confirmation {
+  width: 60vw;
+  height: 30px;
+}
+
+.actions {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.login-btn {
+  width: 100%;
 }
