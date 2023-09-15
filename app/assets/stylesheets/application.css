@@ -191,7 +191,9 @@ main {
   gap: 10px;
 }
 
-.field > #user_email, #user_password {
+.field > #user_email,
+#user_password,
+#user_name {
   width: 60vw;
   height: 30px;
 }
